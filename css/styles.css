@@ -1,0 +1,9 @@
+body {
+    background: grey;
+}
+
+.textArea {
+    height: 80vh;
+    width: 50vh;
+    background: #f7f7f7;
+}
