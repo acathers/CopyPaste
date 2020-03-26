@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Copy/Paste</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
@@ -12,13 +12,30 @@
 
 </head>
 <body>
-<div class="ui menu inverted"></div>
-<div class="ui two column grid center aligned" id="text">
-    <div class="ui container column"><p> testsetestetss</p><pre class="highlightable" id="left">Hello world</pre></div>
-    <div class="ui container column"><pre class="highlightable" id="right">Lets try this</pre></div>
-    <div class="ui row"><label for="target"></label><textarea id="target"></textarea></div>
+
+<h4>
+  The button copies the text and appears in the clipboard. You will be able to paste the text in any text box.
+
+  The first text box can copy text and the second text box removes the text from the text box.
+</h4>
+
+<div>
+  <button onclick="myFunction()">Copy</button>
+</div>
+<div>
+  <textarea type="text" id="input" placeholder="Text Area One" cols="30" rows="10"></textarea>
+ <br><br>
+  <button onClick="document.getElementById('myInput').value = ''">Cut</button>
+  <p>Clears Text Area 2</p>
+  <textarea type="text" id="myInput" placeholder="Text Area Two" cols="30" rows="10"></textarea>
 </div>
 
+
+  <div>
+    <h3>Clipboard</h3>
+    <p id="clipboard"></p>
+  </div>
+  </div>
 
 <script src="js/script.js" type="text/javascript"></script>
 </body>
